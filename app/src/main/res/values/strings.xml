@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">AndroidGitDemo</string>
+    <string-array name="listInfo">
+        <item>a</item>
+        <item>b</item>
+    </string-array>
 </resources>

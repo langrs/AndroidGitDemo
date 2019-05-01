@@ -15,6 +15,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".activity.GridViewActivity" />
+        <activity android:name=".activity.tabHost.TabHostActivity" />
+        <activity android:name=".activity.tabHost.TabHostActivityOne" />
+        <activity android:name=".activity.tabHost.TabHostActivityTwo" />
+        <activity android:name=".activity.tabWidget.TabWidgetActivity" />
+        <activity android:name=".activity.drawerLayout.DrawerLayoutActivity" />
+        <activity android:name=".activity.treeView.AndroidTreeViewActivity" />
+        <activity android:name=".activity.iconFont.IconFontActivity" />
+        <activity android:name=".activity.treeView.AndroidTreeViewActivity2" />
+        <activity android:name=".activity.database.DataBaseActivity"></activity>
     </application>
 
 </manifest>

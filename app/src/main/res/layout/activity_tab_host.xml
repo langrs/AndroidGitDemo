@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFFFFF"
+    android:orientation="vertical" >
+
+    <android.support.v4.app.FragmentTabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="0.0dip"
+                android:layout_weight="1.0" />
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.0"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            <RadioGroup
+                android:id="@+id/rg"
+                android:layout_gravity="bottom"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                android:id="@+id/guide_home"
+                style="@style/main_tab_bottom"
+                android:checked="true"
+                android:text="首页" />
+                <RadioButton
+                android:id="@+id/guide_store"
+                style="@style/main_tab_bottom"
+                android:text="商城" />
+                <RadioButton
+                android:id="@+id/guide_vip"
+                style="@style/main_tab_bottom"
+                android:text="会员" />
+                <RadioButton
+                android:id="@+id/guide_info"
+                style="@style/main_tab_bottom"
+                android:text="信息" />
+            </RadioGroup>
+            </FrameLayout>
+        </LinearLayout>
+    </android.support.v4.app.FragmentTabHost>
+
+</LinearLayout>
+
+<!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<android.support.v4.app.FragmentTabHost-->
+        <!--android:id="@android:id/tabhost"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+    <!--<LinearLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--&lt;!&ndash;FrameLayout是存放Fragment的内容区,ID是固定的&ndash;&gt;-->
+        <!--<FrameLayout-->
+            <!--android:id="@android:id/tabcontent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="0dp">-->
+        <!--</FrameLayout>-->
+        <!--<TabWidget-->
+            <!--android:id="@android:id/tabs"-->
+            <!--android:background="#FFFFFF"-->
+            <!--android:layout_gravity="bottom"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="80dp"></TabWidget>-->
+    <!--</LinearLayout>-->
+    <!--</android.support.v4.app.FragmentTabHost>-->
+<!--</RelativeLayout>-->

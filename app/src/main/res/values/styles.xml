@@ -8,4 +8,40 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="item_tab_text_style">
+        <item name="android:textSize">30sp</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="main_tab_bottom">
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:color">@color/colorBlack</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:width">0dp</item>
+        <item name="android:background">#CACDCD</item>
+        <!--<item name="android:paddingTop">10dp</item>-->
+        <item name="android:height">50dp</item>
+        <item name="android:textSize">16sp</item>
+        <!--<item name="android:drawableTop">@drawable/ic_accessible_black_48dp</item>-->
+    </style>
+
+    <style name="iconStyle">
+        <item name="android:textSize">30sp</item>
+        <item name="android:color">@color/colorAccent</item>
+        <item name="android:drawablePadding">@dimen/fab_margin</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:drawableTop">@drawable/ic_accessible_black_48dp</item>
+    </style>
 </resources>

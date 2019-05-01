@@ -1,7 +1,30 @@
 <resources>
     <string name="app_name">AndroidGitDemo</string>
     <string-array name="listInfo">
-        <item>a</item>
-        <item>b</item>
+        <item>*控件用法</item>
+        <item>listview</item>
+        <item>listview2</item>
+        <item>*页面用法</item>
+        <item>page1</item>
+        <item>page2</item>
+        <item>page3</item>
     </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="fragmentOne">第一个fragment页面</string>
+    <string name="fragmentTwo">第二个fragment页面</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <!--iconfont的字体对应的unicode编码-->
+    <string name="ic_arrow_back">&#xe010;</string>
+    <string name="ic_arrow_drop_down">&#xe011;</string>
+    <string name="ic_arrow_drop_down_circle">&#xe012;</string>
+    <string name="ic_arrow_drop_up">&#xe013;</string>
+    <string name="ic_arrow_forward">&#xe014;</string>
+    <string name="ic_keyboard_arrow_right">&#xe0c7;</string>
+    <string name="ic_email">&#xe087;</string>
 </resources>

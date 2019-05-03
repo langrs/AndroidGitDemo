@@ -9,6 +9,7 @@ import android.widget.ExpandableListView;
 import lzm.com.androidgitdemo.activity.GridViewActivity;
 import lzm.com.androidgitdemo.activity.database.DataBaseActivity;
 import lzm.com.androidgitdemo.activity.drawerLayout.DrawerLayoutActivity;
+import lzm.com.androidgitdemo.activity.greenDao.GreenDAOActivity;
 import lzm.com.androidgitdemo.activity.iconFont.IconFontActivity;
 import lzm.com.androidgitdemo.activity.tabHost.TabHostActivity;
 import lzm.com.androidgitdemo.activity.tabWidget.TabWidgetActivity;
@@ -22,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private String[][] childs = {{"GridView","ListView","TabHost切换TAB","TabWidget切换tab",
             "DrawerLayout弹出抽屉","AndroidTreeView树形菜单","AndroidTreeView树形菜单2"},
             {"iconfont使用"},
-            {"原生Sqlite数据库操作"}};
+            {"原生Sqlite数据库操作","greenDAO数据库操作"}};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,6 +70,9 @@ public class MainActivity extends AppCompatActivity {
                     intent = AndroidTreeViewActivity2.getStartIntent(MainActivity.this);
                 }else if(activity.equals("原生Sqlite数据库操作")){
                     intent = DataBaseActivity.getStartIntent(MainActivity.this);
+
+                }else if(activity.equals("greenDAO数据库操作")){
+                    intent = GreenDAOActivity.getStartIntent(MainActivity.this);
                 }
                 startActivity(intent);
                 return true;

@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
 
 android {
     compileSdkVersion 25
@@ -19,6 +20,12 @@ android {
     }
 }
 
+//修改表的时候需要更改一下版本号
+greendao {
+    schemaVersion 1
+    targetGenDir 'src/main/java'
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
@@ -29,4 +36,6 @@ dependencies {
     compile 'com.github.bmelnychuk:atv:1.2.+'
 //    矢量图标
     compile 'com.github.johnkil.print:print:1.2.2'
+    //数据库的ORM架构greenDAO引用
+    compile 'org.greenrobot:greendao:3.2.0'
 }

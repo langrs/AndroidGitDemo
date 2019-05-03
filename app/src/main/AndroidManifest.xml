@@ -24,7 +24,8 @@
         <activity android:name=".activity.treeView.AndroidTreeViewActivity" />
         <activity android:name=".activity.iconFont.IconFontActivity" />
         <activity android:name=".activity.treeView.AndroidTreeViewActivity2" />
-        <activity android:name=".activity.database.DataBaseActivity"></activity>
+        <activity android:name=".activity.database.DataBaseActivity" />
+        <activity android:name=".activity.greenDao.GreenDAOActivity"></activity>
     </application>
 
 </manifest>
